@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+    flex-wrap:wrap;
+}
+
+.card{
+    margin-top: 20px;
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.card:hover{
+    box-shadow: 0 0 10px rgb(242, 5, 5);
+}
+
+.card__image{
+    height: 120px;
+    margin: auto;
+    background-color: darkgrey;
+    max-width: 180px;
+}
+.card__description{
+    margin-top: 15px;
+    text-align: center;
+}
+/* При ширине браузера 768px и меньше */
+@media screen and (max-width: 768px) {
+    .card {
+      width: 50%; /* ширина карточки 50% от ширины контейнера */
+      max-width: 100%; /* максимальная ширина карточки 100% от ширины контейнера */
+      margin: auto auto 10px; /* автоматический внешний отступ со всех сторон, но снизу 10px  */
+    }
+   }
+   
+   /* При ширине браузера 480px и меньше */
+   @media screen and (max-width: 480px) {
+    .card {
+      width: 95%; /* ширина карточки 95% от ширины контейнера */
+    }
+   }
+   body{
+    background-color: darkkhaki;
+   }
